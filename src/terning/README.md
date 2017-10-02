@@ -1,5 +1,5 @@
 # Terning
-This is a Java program for rolling dice.
+This is a Java program for- rolling dice.
 The program has known errors. 
 
 ## Purpose

@@ -10,6 +10,8 @@ public class DiceTest {
 
 	//hh
 	
+	// hej
+	
 	@Before
 	public void setUp() throws Exception {
 	}
