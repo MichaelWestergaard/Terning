@@ -8,8 +8,6 @@ public class Dice {
 	
 	
 	
-	
-	
 	// roll the die n times and print the values
 	public void rollMultiple(int n) {
 		for (int i=1; i<n; i++) {
