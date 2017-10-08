@@ -20,9 +20,38 @@ public class DiceTest {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
+	@Test // Tester om terningen giver andre værdier end 1-6
 	public void testRoll() {
-		fail("Not yet implemented");
+		int[] rolls = new int[1000];
+		int oneCount = 0, twoCount = 0, threeCount = 0, fourCount = 0, fiveCount = 0, sixCount = 0;
+
+		for (int i = 0; i < 1000; i++) {
+			rolls[i] = diceTest.roll();
+			switch(rolls[i]) {
+
+			case 1:
+				oneCount++;
+				break;
+			case 2:
+				twoCount++;
+				break;
+			case 3:
+				threeCount++;
+				break;
+			case 4:
+				fourCount++;
+				break;
+			case 5:
+				fiveCount++;
+				break;
+			case 6:
+				sixCount++;
+				break;
+			default:
+				fail("Der forekommer andre værdier end 1-6");
+				break;
+			}
+		}
 	}
 
 	@Test
